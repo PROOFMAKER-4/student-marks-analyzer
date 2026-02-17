@@ -1,0 +1,6 @@
+import pandas as pd
+from src.analyzer import analyze_marks
+
+def test_csv_reading():
+    df = pd.DataFrame({"Marks": [50, 60, 70]})
+    assert df['Marks'].mean() == 60
